@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свайперфорд</title>
+    <link rel="stylesheet" href="/style/header.css">
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/style/fontstyle.css">
+    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="shortcut icon" href="/image/swiper.png" />
+</head>
+<style>
+    #session-1 {
+        color: orange !important;
+        text-shadow: 0 0 2px orange;
+    }
+
+    .session-6 {
+        color: orange !important;
+        text-shadow: 0 0 2px orange;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="main-header">
+                <input type="checkbox" id="burger-toggle">
+                <label for="burger-toggle">
+                    <span></span>
+                </label>
+                <div id="tipo-left-cont">
+                    <div id="ghost"></div>
+                    <div id="tittle-top-top">
+                        <img src="/image/swiper2.png" alt="">
+                        <span>СвайперФорд</span>
+                    </div>
+                    <a href="/search/index.html" class="session-1" id="top-tittle">1. Основные понятия криптографии</a>
+                    <div class="line"></div>
+                    <a href="/search/pages/page2.html" class="session-2">2. Цели и задачи криптографии</a>
+                    <div class="line"></div>
+                    <a href="/search/pages/page3.html" class="session-3">3. Особенности криптоанализа</a>
+                    <div class="line"></div>
+                    <a href="/search/pages/page4.html" class="session-4">4. Асиметричая криптография</a>
+                    <div class="line"></div>
+                    <a href="/search/pages/page5.html" class="session-5">5. Криптосистем на эллиптических кривых</a>
+                    <div class="line"></div>
+                    <a href="/search/pages/page6.html" class="session-6">6. Общая характеристика потоковых шифров</a>
+                    <div class="line"></div>
+                    <a href="/search/pages/page7.html" class="session-7">7. Основные понятия cтенографии</a>
+                    <div class="line"></div>
+                    <a href="/search/pages/page8.html" class="session-8">8. Основные принципы стеганографического анализа</a>
+                    <div class="line"></div>
+                    <div id="buttom-fu">
+                        <a href="">Вернуться</a>
+                    </div>
+                </div>
+                <a href="#" id="session-1">Главная</a>
+                <a href="/search/about_us.html">О нас</a>
+            </div>
+            <div class="notimpt-header">
+                <a href="">Вернуться на сайт</a>
+            </div>
+        </div>
+        <div class="horizontal-line" id="line-header"></div>
+        <div class="left-right-cont">
+            <div class="left-cont">
+                <a href="/search/index.html" class="session-1">1. Основные понятия криптографии</a>
+                <div class="line"></div>
+                <a href="/search/pages/page2.html" class="session-2">2. Цели и задачи криптографии</a>
+                <div class="line"></div>
+                <a href="/search/pages/page3.html" class="session-3">3. Особенности криптоанализа</a>
+                <div class="line"></div>
+                <a href="/search/pages/page4.html" class="session-4">4. Асиметричая криптография</a>
+                <div class="line"></div>
+                <a href="/search/pages/page5.html" class="session-5">5. Криптосистем на эллиптических кривых</a>
+                <div class="line"></div>
+                <a href="/search/pages/page6.html" class="session-6">6. Общая характеристика потоковых шифров</a>
+                <div class="line"></div>
+                <a href="/search/pages/page7.html" class="session-7">7. Основные понятия cтенографии</a>
+                <div class="line"></div>
+                <a href="/search/pages/page8.html" class="session-8">8. Основные принципы стеганографического анализа</a>
+            </div>
+            <div class="right-all">
+                <div class="right-cont">
+                    <h1>Общая характеристика потоковых шифров</h1>
+                    <p>
+                        Как мы убедились, в блочном шифре из двух одинаковых
+                        блоков открытого текста получаются одинаковые блоки шифро-
+                        ванного текста, что, безусловно, является одним из недостатков
+                        алгоритмов. Избежать этого позволяют поточные шифры, в кото-
+                        рых шифрующее преобразование символа открытого текста меня-
+                        ется от одного элемента к другому.
+                    </p>
+                    <p>
+                        Потоковый шифр реализует другой подход к симметричному
+                        шифрованию, нежели блочные шифры.
+                    </p>
+                    <p>
+                        В качестве символов могут выступать как отдельные биты, так и
+                        символы (байты). Таким образом, потоковые шифры подходят для
+                        шифрования непрерывных потоков данных – голоса, видео и т. д.
+                    </p>
+                    <p>
+                        Потоковые шифры преобразуют открытый текст в шифртекст
+                        по одному биту (символу) за операцию. Генератор потока ключей
+                        выдает поток битов: k1, k2, …, ki. Этот поток битов (иногда назы-
+                        ваемый бегущим ключом) и поток битов открытого текст m1 , m2,
+                        …, mi, …, mz подвергаются операции сложения по модулю два
+                        (XOR), и в результате получается поток битов шифртекста:
+                        ci = mi ⊕ k i.
+                    </p>
+                    <p>
+                        ри расшифровании, для восстановления битов открытого
+                        текста, операция XOR выполняется над битами шифртекста и тем
+                        же самым потоком ключей:
+                        mi = ci ⊕ k i. Как видим, справедливо: ki = mi ⊕ ci.
+                    </p>
+                    <p>
+                        Так как посимвольное шифрование при потоковом шифровании данных не приводит к задержкам в
+                        криптосистеме, то важнейшее достоинство потоковых шифров – высокая скорость шиф-
+                        рования, соизмеримая со скоростью поступления входной ин-
+                        формации.
+                    </p>
+                    <p>
+                        Это позволяет обеспечить шифрование практически в реаль-
+                        ном масштабе времени вне зависимости от объема информации и
+                        разрядности потока данных.
+                    </p>
+                    <p>
+                        Классический пример потокового шифра – шифр Вернама,
+                        или одноразовый блокнот. Уже отмечалось, что если для гаммы
+                        последовательность битов выбирается случайно и длина гаммы
+                        равна, по крайней мере, длине сообщения, то взломать шифр не-
+                        возможно. Но у данного режима шифрования есть и отрицатель-
+                        ная особенность – проблемы с передачей и хранением ключей,
+                        ведь ключи, сравнимые по длине с передаваемыми сообщениями,
+                        трудно использовать на практике. Поэтому основная идея совре-
+                        менных потоковых шифров – реализовать концепцию одноразово-
+                        го блокнота, используя секретный ключ меньшей длины, из кото-
+                        рого для гаммы генерируется псевдослучайная числовая последо-
+                        вательность, похожая на случайную.
+                    </p>
+                </div>
+                <div class="button">
+                    <a href="/search/pages/page5.html" id="prev">предыдущая</a>
+                    <a href="/search/pages/page7.html" id="next">следующая</a>
+                    <a href="/search/pages/page5.html" class="invs" id="invsprev">prev</a>
+                    <a href="/search/pages/page7.html" class="invs">next</a>
+                </div>
+            </div>
+        </div>
+        <div class="horizontal-line" id="horizontal-line3"></div>
+    </div>
+    <footer>
+        <div id="huinya"></div>
+        <div id="footer">
+            <div id="mainfooter">
+                <div class="block" id="block1">
+                    <span class="tittle">АДРЕС</span>
+                    <div class="horizontal-line5"></div>
+                    <span>Сверхскопление Девы</span>
+                    <span>Местная группа галактик</span>
+                    <span>галактика Млечный Путь</span>
+                    <span>галактический рукав Ориона</span>
+                    <span>Солнечная система</span>
+                    <div class="horizontal-line5"></div>
+                    <span>Континент Евразия</span>
+                    <span>Страна США</span>
+                    <span>Город Вашингтон</span>
+                    <span>Фредди Фазбер 123</span>
+                </div>
+                <div class="block" id="block2">
+                    <div class="block" id="block21">
+                        <span class="tittle">СВЯЖИТЕСЬ С НАМИ</span>
+                        <div class="horizontal-line5"></div>
+                        <span>takogo@email.net</span>
+                        <span> 7 777 777 77-77</span>
+                        <span>nok1to</span>
+                    </div>
+                    <div class="block" id="block22">
+                        <span class="tittle">Наша тех. поддержка</span>
+                        <div class="horizontal-line5"></div>
+                        <span>Поддержка скуфов</span>
+                        <span>Поддержка инцелов</span>
+                        <span>Поддержка нормисов</span>
+                        <span>Поддержка Чадов</span>
+                    </div>
+                </div>
+                <div class="block" id="block3">
+                    <span class="tittle">О компании</span>
+                    <div class="horizontal-line5"></div>
+                    <span>Cвайперфорд самая лучшая</span>
+                    <span>Невероятно-восхительная</span>
+                    <span>Превосходно выглядещеее </span>
+                    <span>Поприще самого</span>
+                    <span>Великого Никиты Нуянзина</span>
+                </div>
+                <div class="block" id="block4">
+                    <span class="tittle" id="nefor">Отдельный уголок</span>
+                    <div class="horizontal-line5"></div>
+                    <img src="/image/stick.png" alt="">
+    
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

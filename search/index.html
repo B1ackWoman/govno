@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свайперфорд</title>
+    <link rel="stylesheet" href="/style/header.css">
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/style/fontstyle.css">
+    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="shortcut icon" href="/image/swiper.png" />
+</head>
+<style>
+    .session-1 {
+        color: orange !important;
+        text-shadow: 0 0 2px orange;
+    }
+    #session-1 {
+        color: orange !important;
+        text-shadow: 0 0 2px orange;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="main-header">
+                <input type="checkbox" id="burger-toggle">
+                <label for="burger-toggle">
+                    <span></span>
+                </label>
+                <div id="tipo-left-cont">
+                    <div id="ghost"></div>
+                    <div id="tittle-top-top">
+                        <img src="/image/swiper2.png" alt="">
+                        <span>СвайперФорд</span>
+                    </div>
+                    <a href="/search/index.html" class="session-1" id="top-tittle">1. Основные понятия криптографии</a>
+                    <div class="line"></div>
+                    <a href="/search/pages/page2.html" class="session-2">2. Цели и задачи криптографии</a>
+                    <div class="line"></div>
+                    <a href="/search/pages/page3.html" class="session-3">3. Особенности криптоанализа</a>
+                    <div class="line"></div>
+                    <a href="/search/pages/page4.html" class="session-4">4. Асиметричая криптография</a>
+                    <div class="line"></div>
+                    <a href="/search/pages/page5.html" class="session-5">5. Криптосистем на эллиптических кривых</a>
+                    <div class="line"></div>
+                    <a href="/search/pages/page6.html" class="session-6">6. Общая характеристика потоковых шифров</a>
+                    <div class="line"></div>
+                    <a href="/search/pages/page7.html" class="session-7">7. Основные понятия cтенографии</a>
+                    <div class="line"></div>
+                    <a href="/search/pages/page8.html" class="session-8">8. Основные принципы стеганографического анализа</a>
+                    <div class="line"></div>
+                    <div id="buttom-fu">
+                        <a href="">Вернуться</a>
+                    </div>
+                </div>
+                <a href="#" id="session-1">Главная</a>
+                <a href="/search/about_us.html">О нас</a>
+            </div>
+            <div class="notimpt-header">
+                <a href="">Вернуться на сайт</a>
+            </div>
+        </div>
+        <div class="horizontal-line" id="line-header"></div>
+        <div class="left-right-cont">
+            <div class="left-cont">
+                <a href="/search/index.html" class="session-1">1. Основные понятия криптографии</a>
+                <div class="line"></div>
+                <a href="/search/pages/page2.html" class="session-2">2. Цели и задачи криптографии</a>
+                <div class="line"></div>
+                <a href="/search/pages/page3.html" class="session-3">3. Особенности криптоанализа</a>
+                <div class="line"></div>
+                <a href="/search/pages/page4.html" class="session-4">4. Асиметричая криптография</a>
+                <div class="line"></div>
+                <a href="/search/pages/page5.html" class="session-5">5. Криптосистем на эллиптических кривых</a>
+                <div class="line"></div>
+                <a href="/search/pages/page6.html" class="session-6">6. Общая характеристика потоковых шифров</a>
+                <div class="line"></div>
+                <a href="/search/pages/page7.html" class="session-7">7. Основные понятия cтенографии</a>
+                <div class="line"></div>
+                <a href="/search/pages/page8.html" class="session-8">8. Основные принципы стеганографического анализа</a>
+            </div>
+            <div class="right-all">
+                <div class="right-cont">
+                    <h1>Основные понятия криптографии</h1>
+                    <p>
+                        Процесс преобразования открытых данных в зашифрованные и наоборот принято называть шифрованием,
+                        причем
+                        две составляющие этого процесса называют соответственно зашифрованием и расшифрованием.
+                        Математически
+                        данное преобразование представляется следующими зависимостями, описывающими действия с исходной
+                        информацией:
+                    </p>
+                    <span>C = Ek1(M)</span>
+                    <p>M` = Dk2(C),</p>
+                    <span>где:</span>
+                    <ul>
+                        <li>M (message) - открытая информация (в литературе по защите информации часто носит название
+                            "исходный
+                            текст");</li>
+                        <li>C (cipher text) - полученный в результате зашифрования шифртекст (или криптограмма); E
+                            (encryption)
+                            - функция зашифрования, выполняющая криптографические преобразования над исходным текстом;
+                        </li>
+                        <li>k1 (key) - параметр функции E, называемый ключом зашифрования;</li>
+                        <li>M` - информация, полученная в результате расшифрования;</li>
+                        <li>D(decryption) - функция расшифрования, выполняющая обратные зашифрованию криптографические
+                            преобразования над шифртекстом;</li>
+                        <li>k2 - ключ, с помощью которого выполняется расшифрование информации.</li>
+                    </ul>
+                    <p>
+                        Понятие "ключ" в стандарте ГОСТ 28147-89 (алгоритм симметричного шифрования) определено
+                        следующим
+                        образом: "конкретное секретное состояние некоторых параметров алгоритма криптографического
+                        преобразования, обеспечивающее выбор одного преобразования из совокупности всевозможных для
+                        данного
+                        алгоритма преобразований". Иными словами, ключ представляет собой уникальный элемент, с помощью
+                        которого
+                        можно изменять результаты работы алгоритма шифрования: один и тот же исходный текст при
+                        использовании
+                        различных ключей будет зашифрован по-разному.
+                    </p>
+                    <p>
+                        Для того, чтобы результат расшифрования совпал с исходным сообщением (т. е. чтобы M` = M),
+                        необходимо
+                        одновременное выполнение двух условий. Во-первых, функция расшифрования D должна соответствовать
+                        функции
+                        зашифрования E. Во-вторых, ключ расшифрования k2 олжен соответствовать ключу зашифрования k1.
+                    </p>
+                    <p>
+                        Если для зашифрования использовался криптостойкий алгоритм шифрования, то при отсутствии
+                        правильного
+                        ключа k2 получить M` - M невозможно.Криптостойкость - основная характеристика алгоритмов
+                        шифрования и
+                        указывает прежде всего на степень сложности получения исходного текста из зашифрованного без
+                        ключа k2.
+                    </p>
+                </div>
+                <div class="button">
+                    <a href="#" id="prev">предыдущая</a>
+                    <a href="/search/pages/page2.html" id="next">следующая</a>
+                    <a href="#" class="invs" id="invsprev">prev</a>
+                    <a href="/search/pages/page2.html" class="invs">next</a>
+                </div>
+            </div>
+        </div>
+        <div class="horizontal-line" id="horizontal-line3"></div>
+    </div>
+    <footer>
+        <div id="huinya"></div>
+        <div id="footer">
+            <div id="mainfooter">
+    
+                <div class="block" id="block1">
+                    <span class="tittle">АДРЕС</span>
+                    <div class="horizontal-line5"></div>
+                    <span>Сверхскопление Девы</span>
+                    <span>Местная группа галактик</span>
+                    <span>галактика Млечный Путь</span>
+                    <span>галактический рукав Ориона</span>
+                    <span>Солнечная система</span>
+                    <div class="horizontal-line5"></div>
+                    <span>Континент Евразия</span>
+                    <span>Страна США</span>
+                    <span>Город Вашингтон</span>
+                    <span>Фредди Фазбер 123</span>
+                </div>
+                <div class="block" id="block2">
+                    <div class="block" id="block21">
+                        <span class="tittle">СВЯЖИТЕСЬ С НАМИ</span>
+                        <div class="horizontal-line5"></div>
+                        <span>takogo@email.net</span>
+                        <span> 7 777 777 77-77</span>
+                        <span>nok1to</span>
+                    </div>
+                    <div class="block" id="block22">
+                        <span class="tittle">Наша тех. поддержка</span>
+                        <div class="horizontal-line5"></div>
+                        <span>Поддержка скуфов</span>
+                        <span>Поддержка инцелов</span>
+                        <span>Поддержка нормисов</span>
+                        <span>Поддержка Чадов</span>
+                    </div>
+                </div>
+                <div class="block" id="block3">
+                    <span class="tittle">О компании</span>
+                    <div class="horizontal-line5"></div>
+                    <span>Cвайперфорд самая лучшая</span>
+                    <span>Невероятно-восхительная</span>
+                    <span>Превосходно выглядещеее </span>
+                    <span>Поприще самого</span>
+                    <span>Великого Никиты Нуянзина</span>
+                </div>
+                <div class="block" id="block4">
+                    <span class="tittle" id="nefor">Отдельный уголок</span>
+                    <div class="horizontal-line5"></div>
+                    <img src="/image/stick.png" alt="">
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+</html>

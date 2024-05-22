@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свайперфорд</title>
+    <link rel="stylesheet" href="/style/header.css">
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/style/fontstyle.css">
+    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="shortcut icon" href="/image/swiper.png" />
+</head>
+<style>
+    #session-1 {
+        color: orange !important;
+        text-shadow: 0 0 2px orange;
+    }
+
+    .session-4 {
+        color: orange !important;
+        text-shadow: 0 0 2px orange;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="main-header">
+                <input type="checkbox" id="burger-toggle">
+                <label for="burger-toggle">
+                    <span></span>
+                </label>
+                <div id="tipo-left-cont">
+                    <div id="ghost"></div>
+                    <div id="tittle-top-top">
+                        <img src="/image/swiper2.png" alt="">
+                        <span>СвайперФорд</span>
+                    </div>
+                    <a href="/search/index.html" class="session-1" id="top-tittle">1. Основные понятия криптографии</a>
+                    <div class="line"></div>
+                    <a href="/search/pages/page2.html" class="session-2">2. Цели и задачи криптографии</a>
+                    <div class="line"></div>
+                    <a href="/search/pages/page3.html" class="session-3">3. Особенности криптоанализа</a>
+                    <div class="line"></div>
+                    <a href="/search/pages/page4.html" class="session-4">4. Асиметричая криптография</a>
+                    <div class="line"></div>
+                    <a href="/search/pages/page5.html" class="session-5">5. Криптосистем на эллиптических кривых</a>
+                    <div class="line"></div>
+                    <a href="/search/pages/page6.html" class="session-6">6. Общая характеристика потоковых шифров</a>
+                    <div class="line"></div>
+                    <a href="/search/pages/page7.html" class="session-7">7. Основные понятия cтенографии</a>
+                    <div class="line"></div>
+                    <a href="/search/pages/page8.html" class="session-8">8. Основные принципы стеганографического анализа</a>
+                    <div class="line"></div>
+                    <div id="buttom-fu">
+                        <a href="">Вернуться</a>
+                    </div>
+                </div>
+                <a href="#" id="session-1">Главная</a>
+                <a href="/search/about_us.html">О нас</a>
+            </div>
+            <div class="notimpt-header">
+                <a href="">Вернуться на сайт</a>
+            </div>
+        </div>
+        <div class="horizontal-line" id="line-header"></div>
+        <div class="left-right-cont">
+            <div class="left-cont">
+                <a href="/search/index.html" class="session-1">1. Основные понятия криптографии</a>
+                <div class="line"></div>
+                <a href="/search/pages/page2.html" class="session-2">2. Цели и задачи криптографии</a>
+                <div class="line"></div>
+                <a href="/search/pages/page3.html" class="session-3">3. Особенности криптоанализа</a>
+                <div class="line"></div>
+                <a href="/search/pages/page4.html" class="session-4">4. Асиметричая криптография</a>
+                <div class="line"></div>
+                <a href="/search/pages/page5.html" class="session-5">5. Криптосистем на эллиптических кривых</a>
+                <div class="line"></div>
+                <a href="/search/pages/page6.html" class="session-6">6. Общая характеристика потоковых шифров</a>
+                <div class="line"></div>
+                <a href="/search/pages/page7.html" class="session-7">7. Основные понятия cтенографии</a>
+                <div class="line"></div>
+                <a href="/search/pages/page8.html" class="session-8">8. Основные принципы стеганографического анализа</a>
+            </div>
+            <div class="right-all">
+                <div class="right-cont">
+                    <h1>Асимметричная криптография</h1>
+                    <p>
+                        Две проблемы, связанные с практическим использованием сим-
+                        метричных криптосистем (хранение и обмен ключевой информа-
+                        цией), стали важными побудительными мотивами для разработки
+                        принципиально нового класса методов шифрования: криптографии
+                        с открытым ключом, или асимметричной криптографии.
+                    </p>
+                    <p>
+                        Концепция нового подхода предложена Уитфилдом Диффи
+                        (Whitfield Diffie) и Мартином Хеллманом (Martin Hellman), а так-
+                        же, независимо, Ральфом Мерклом (Ralph Merkle). В основу по-
+                        ложена идея использовать ключи парами: один – для зашифрова-
+                        ния (открытый или публичный ключ), другой – для расшифрова-
+                        ния (тайный ключ). Таким образом, в отличие от симметричных
+                        систем, ключи K1 и K2 (см. рис. 3.2) отличаются. Несекретный
+                        ключ может передаваться по открытому каналу. Его знание не да-
+                        ет злоумышленнику возможности получить доступ к информации,
+                        содержащейся в сообщении.
+                    </p>
+                    <p>
+                        У. Диффи и М. Хеллман в 1976 году концепцию трансформи-
+                        ровали в алгоритм (в литературе соответствующий алгоритм назы-
+                        вается алгоритмом Диффи – Хеллмана). Начиная с этого события,
+                        было создано множество алгоритмов, основанных на концепции от-
+                        крытых ключей. Как правило, эти алгоритмы основываются на ре-
+                        шении трудных задач, которые мы рассматривали выше: вычисле-
+                        ние дискретного логарифма и разложение чисел на множители. Не-
+                        которые из созданных алгоритмов в силу различных причин при-
+                        годны для шифрования, другие – для генерации электронной циф-
+                        ровой подписи (ЭЦП). И лишь три из созданных алгоритмов ис-
+                        пользуются в обоих случаях: алгоритмы RSA, Эль-Гамаля и Рабина.
+                    </p>
+                    <p>
+                        Алгоритм Диффи – Хеллмана для распределения ключей:
+                        абоненты А и В могут воспользоваться этим алгоритмом для обмена ключевой информацией по открытым
+                        каналам. Предвари-
+                        тельно стороны выбирают большие простые числа n и g.
+                    </p>
+                    <p>
+                        Протокол Диффи – Хеллмана является уязвимым для атаки,
+                        называемой «человек в середине»: злоумышленник С может пере-
+                        хватить открытое значение, посылаемое от А к В, и послать вместо
+                        него свое открытое значение. Затем он может перехватить откры-
+                        тое значение, посылаемое от В к А, и также передать вместо него
+                        свое открытое значение. Тем самым С получит общие секретные
+                        ключи с А и В и сможет читать и/или модифицировать сообщения,
+                        передаваемые от одной стороны к другой.
+                    </p>
+                    <p>
+                        В основе алгоритма, предложенного Мерклом и Хеллманом,
+                        лежит идея шифрования сообщения на основе решения серии за-
+                        дач укладки ранца. Предметы из «кучи» выбираются с помощью
+                        блока открытого текста, длина которого (в битах) равна количест-
+                        ву предметов в куче. При этом биты открытого текста соответст-
+                        вуют значениям b i, а шифртекст является полученным суммарным
+                        весом.
+                    </p>
+                </div>
+                <div class="button">
+                    <a href="/search/pages/page3.html" id="prev">предыдущая</a>
+                    <a href="/search/pages/page5.html" id="next">следующая</a>
+                    <a href="/search/pages/page3.html" class="invs" id="invsprev">prev</a>
+                    <a href="/search/pages/page5.html" class="invs">next</a>
+                </div>
+            </div>
+        </div>
+        <div class="horizontal-line" id="horizontal-line3"></div>
+    </div>
+    <footer>
+        <div id="huinya"></div>
+        <div id="footer">
+            <div id="mainfooter">
+    
+                <div class="block" id="block1">
+                    <span class="tittle">АДРЕС</span>
+                    <div class="horizontal-line5"></div>
+                    <span>Сверхскопление Девы</span>
+                    <span>Местная группа галактик</span>
+                    <span>галактика Млечный Путь</span>
+                    <span>галактический рукав Ориона</span>
+                    <span>Солнечная система</span>
+                    <div class="horizontal-line5"></div>
+                    <span>Континент Евразия</span>
+                    <span>Страна США</span>
+                    <span>Город Вашингтон</span>
+                    <span>Фредди Фазбер 123</span>
+                </div>
+                <div class="block" id="block2">
+                    <div class="block" id="block21">
+                        <span class="tittle">СВЯЖИТЕСЬ С НАМИ</span>
+                        <div class="horizontal-line5"></div>
+                        <span>takogo@email.net</span>
+                        <span> 7 777 777 77-77</span>
+                        <span>nok1to</span>
+                    </div>
+                    <div class="block" id="block22">
+                        <span class="tittle">Наша тех. поддержка</span>
+                        <div class="horizontal-line5"></div>
+                        <span>Поддержка скуфов</span>
+                        <span>Поддержка инцелов</span>
+                        <span>Поддержка нормисов</span>
+                        <span>Поддержка Чадов</span>
+                    </div>
+                </div>
+                <div class="block" id="block3">
+                    <span class="tittle">О компании</span>
+                    <div class="horizontal-line5"></div>
+                    <span>Cвайперфорд самая лучшая</span>
+                    <span>Невероятно-восхительная</span>
+                    <span>Превосходно выглядещеее </span>
+                    <span>Поприще самого</span>
+                    <span>Великого Никиты Нуянзина</span>
+                </div>
+                <div class="block" id="block4">
+                    <span class="tittle" id="nefor">Отдельный уголок</span>
+                    <div class="horizontal-line5"></div>
+                    <img src="/image/stick.png" alt="">
+    
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
